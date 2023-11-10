@@ -1,0 +1,199 @@
+
++X 1
+--- RRG --- ---
+--- RRG --- ---
+--- RRG --- ---
+BBB GGP YYY ROO
+BBB GGP YYY ROO
+BBB GGP YYY ROO
+--- PPO --- ---
+--- PPO --- ---
+--- PPO --- ---
+
++X 0
+--- RGR --- ---
+--- RGR --- ---
+--- RGR --- ---
+BBB GPG YYY ORO
+BBB GPG YYY ORO
+BBB GPG YYY ORO
+--- POP --- ---
+--- POP --- ---
+--- POP --- ---
+
++X -1
+--- GRR --- ---
+--- GRR --- ---
+--- GRR --- ---
+BBB PGG YYY OOR
+BBB PGG YYY OOR
+BBB PGG YYY OOR
+--- OPP --- ---
+--- OPP --- ---
+--- OPP --- ---
+
+
++Y 1
+--- RRR --- ---
+--- RRR --- ---
+--- RRR --- ---
+GGG YYY OOO BBB
+BBB GGG YYY OOO
+BBB GGG YYY OOO
+--- PPP --- ---
+--- PPP --- ---
+--- PPP --- ---
+
++Y 0
+--- RRR --- ---
+--- RRR --- ---
+--- RRR --- ---
+BBB GGG YYY OOO
+GGG YYY OOO BBB
+BBB GGG YYY OOO
+--- PPP --- ---
+--- PPP --- ---
+--- PPP --- ---
+
++Y -1
+--- RRR --- ---
+--- RRR --- ---
+--- RRR --- ---
+BBB GGG YYY OOO
+BBB GGG YYY OOO
+GGG YYY OOO BBB
+--- PPP --- ---
+--- PPP --- ---
+--- PPP --- ---
+
++Z 1
+--- RRR --- ---
+--- RRR --- ---
+--- BBB --- ---
+BBP GGG RYY OOO
+BBP GGG RYY OOO
+BBP GGG RYY OOO
+--- YYY --- ---
+--- PPP --- ---
+--- PPP --- ---
+
++Z 0
+--- RRR --- ---
+--- BBB --- ---
+--- RRR --- ---
+BPB GGG YRY OOO
+BPB GGG YRY OOO
+BPB GGG YRY OOO
+--- PPP --- ---
+--- YYY --- ---
+--- PPP --- ---
+
++Z -1
+--- BBB --- ---
+--- RRR --- ---
+--- RRR --- ---
+PBB GGG YYR OOO
+PBB GGG YYR OOO
+PBB GGG YYR OOO
+--- PPP --- ---
+--- PPP --- ---
+--- YYY --- ---
+
+-X 1
+--- ORR --- ---
+--- ORR --- ---
+--- ORR --- ---
+BBB RGG YYY OOP
+BBB RGG YYY OOP
+BBB RGG YYY OOP
+--- GPP --- ---
+--- GPP --- ---
+--- GPP --- ---
+
+-X 0
+--- ROR --- ---
+--- ROR --- ---
+--- ROR --- ---
+BBB GRG YYY OPO
+BBB GRG YYY OPO
+BBB GRG YYY OPO
+--- PGP --- ---
+--- PGP --- ---
+--- PGP --- ---
+
+-X -1
+--- RRO --- ---
+--- RRO --- ---
+--- RRO --- ---
+BBB GGR YYY POO
+BBB GGR YYY POO
+BBB GGR YYY POO
+--- PPG --- ---
+--- PPG --- ---
+--- PPG --- ---
+
+-Y 1
+--- RRR --- ---
+--- RRR --- ---
+--- RRR --- ---
+BBB GGG YYY OOO
+BBB GGG YYY OOO
+OOO BBB GGG YYY
+--- PPP --- ---
+--- PPP --- ---
+--- PPP --- ---
+
+-Y 0
+--- RRR --- ---
+--- RRR --- ---
+--- RRR --- ---
+BBB GGG YYY OOO
+OOO BBB GGG YYY
+BBB GGG YYY OOO
+--- PPP --- ---
+--- PPP --- ---
+--- PPP --- ---
+
+-Y -1
+--- RRR --- ---
+--- RRR --- ---
+--- RRR --- ---
+OOO BBB GGG YYY
+BBB GGG YYY OOO
+BBB GGG YYY OOO
+--- PPP --- ---
+--- PPP --- ---
+--- PPP --- ---
+
+-Z 1
+--- YYY --- ---
+--- RRR --- ---
+--- RRR --- ---
+RBB GGG YYP OOO
+RBB GGG YYP OOO
+RBB GGG YYP OOO
+--- PPP --- ---
+--- PPP --- ---
+--- BBB --- ---
+
+-Z 0
+--- RRR --- ---
+--- YYY --- ---
+--- RRR --- ---
+BRB GGG YPY OOO
+BRB GGG YPY OOO
+BRB GGG YPY OOO
+--- PPP --- ---
+--- BBB --- ---
+--- PPP --- ---
+
+-Z -1
+--- RRR --- ---
+--- RRR --- ---
+--- YYY --- ---
+BBR GGG PYY OOO
+BBR GGG PYY OOO
+BBR GGG PYY OOO
+--- BBB --- ---
+--- PPP --- ---
+--- PPP --- ---
