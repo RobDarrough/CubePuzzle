@@ -40,7 +40,8 @@ class CompositeCube:
 
     def flatten(self):
         """
-        flatten the data into six two-dimensional arrays showing only the exposed faces of the atomic cubes.
+        flatten the data into six two-dimensional arrays showing only the exposed faces of
+         the atomic cubes.
 
         positive faces fold into Z plane facing positive
         where +X face meets +Z face rotate into Z plane, folding to the right from front edge
@@ -69,21 +70,42 @@ class CompositeCube:
             Z3.NEG_Y: [],
             Z3.NEG_Z: []
         }
-
+        
+        for k in flat.keys():
+        	for i in range(3):
+        		flat[k].append([])
+        		for j in range(3):
+        			flat[k][i].append([])
+        			
+        #print(len(flat[Z3.POS_X]))
+        
         for key in flat.keys():
             for h in range(3):
-                flat[key].append([])
+                #flat[key].append([3*""])
                 for v in range(3):
+                    #print(str(h) + " " + str(v) + " " + str(key))
                     if key == Z3.POS_X:
-                        flat[key][h] = self.atoms[2][3-v][3-h].color(key)
+                        flat[key][h][v] = self.atoms[2][2-v][2-h].color(key)
                     elif key == Z3.POS_Y:
-                        flat[key][h] = self.atoms[h][2][v].color(key)
+                        flat[key][h][v] = self.atoms[h][2][v].color(key)
                     elif key == Z3.POS_Z:
-                        flat[key][h] = self.atoms[h][3-v][2].color(key)
+                        flat[key][h][v] = self.atoms[h][2-v][2].color(key)
                     elif key == Z3.NEG_X:
-                        flat[key][h] = self.atoms[0][3-v][3-h].color(key)
+                        flat[key][h][v] = self.atoms[0][2-v][2-h].color(key)
                     elif key == Z3.NEG_Y:
-                        flat[key][h] = self.atoms[h][0][v].color(key)
+                        flat[key][h][v] = self.atoms[h][0][v].color(key)
                     elif key == Z3.NEG_Z:
-                        flat[key][h] = self.atoms[h][3-v][0].color(key)
+                        flat[key][h][v] = self.atoms[h][2-v][0].color(key)
+                        
+        return flat
     # END
+    
+ 
+c = CompositeCube("MyCube")
+flat = c.flatten()
+for k in flat.keys():
+	for x in range(3):
+		for y in range(3):
+			print(flat[k][x][y], end="")
+		print("")
+	print("")
