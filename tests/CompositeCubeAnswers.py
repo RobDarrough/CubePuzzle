@@ -1,4 +1,13 @@
-import Z3 as Z3
+from cube_puzzle.Vector3 import Vector3 as Vector3
+from cube_puzzle.Vector3 import POS_X as POS_X
+from cube_puzzle.Vector3 import POS_Y as POS_Y
+from cube_puzzle.Vector3 import POS_Z as POS_Z
+from cube_puzzle.Vector3 import NEG_X as NEG_X
+from cube_puzzle.Vector3 import NEG_Y as NEG_Y
+from cube_puzzle.Vector3 import NEG_Z as NEG_Z
+from cube_puzzle.Vector3 import ZERO as ZERO
+from cube_puzzle.AtomicCube import AtomicCube as AtomicCube
+
 
 def ReadAnswersFile():
     '''
@@ -71,36 +80,38 @@ def ShowAnswers(answers):
 
 
 def CodeToAxis(code):
-    match code:
-        case "+X":
-            return Z3.POS_X
-        case "+Y":
-            return Z3.POS_Y
-        case "+Z":
-            return Z3.POS_Z
-        case "-X":
-            return Z3.NEG_X
-        case "-Y":
-            return Z3.NEG_Y
-        case "-Z":
-            return Z3.NEG_Z
+
+    if code == "+X":
+        return POS_X
+    elif code == "+Y":
+        return POS_Y
+    elif code == "+Z":
+        return POS_Z
+    elif code == "-X":
+        return NEG_X
+    elif code == "-Y":
+        return NEG_Y
+    elif code == "-Z":
+        return NEG_Z
+
     return None
 
 
 def AxisToCode(axis):
-    match axis:
-        case Z3.POS_X:
-            return "+X"
-        case Z3.POS_Y:
-            return "+Y"
-        case Z3.POS_Z:
-            return "+Z"
-        case Z3.NEG_X:
-            return "-X"
-        case Z3.NEG_Y:
-            return "-Y"
-        case Z3.NEG_Z:
-            return "-Z"
+
+    if axis == POS_X:
+        return "+X"
+    elif axis == POS_Y:
+        return "+Y"
+    elif axis == POS_Z:
+        return "+Z"
+    elif axis == NEG_X:
+        return "-X"
+    elif axis == NEG_Y:
+        return "-Y"
+    elif axis == NEG_Z:
+        return "-Z"
+
     return None
 
 
